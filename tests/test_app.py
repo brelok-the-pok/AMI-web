@@ -1,10 +1,11 @@
 from explainer.services.pickle_service import PickleService
 from explainer.services.model_explainer import ModelExplainer
 
+
 def test_data_load():
     service = PickleService()
 
-    mono_object = service.get_dataset_and_model(r"D:\AMI\data\obj_v2")
+    mono_object = service.get_dataset_and_model('./obj_v2')
 
     assert mono_object.model is not None
     assert mono_object.dataset is not None
@@ -12,7 +13,7 @@ def test_data_load():
 def test_model_explainer():
     service = PickleService()
 
-    mono_object = service.get_dataset_and_model(r"D:\AMI\data\obj_v2")
+    mono_object = service.get_dataset_and_model('./obj_v2')
 
     explainer = ModelExplainer(mono_object.model)
     explainer.calculate_for_dataset(mono_object.dataset, mono_object.dataset.columns[0])
