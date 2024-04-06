@@ -16,8 +16,8 @@ COLORS = ["brown", "teal", "blue", "coral", "limegreen", "pink", "olive", "navy"
 FONT_SIZE = 18
 FIG_COUNT = 1
 
-PLOT_WIDTH = 16
-PLOT_HEIGHT = 10
+PLOT_WIDTH = 11
+PLOT_HEIGHT = 5
 
 FIG_WIDTH = PLOT_WIDTH * 100
 FIG_HEIGHT = PLOT_HEIGHT * 100
